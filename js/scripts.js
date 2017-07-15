@@ -23,7 +23,7 @@ $(document).ready(function() {
     var pizzaOrder = new Pizza($("input#pizzaSize").val(), // Getting pizza size from jquery
                                $("input#toppings:checked")); // Getthing list of toppings
                                                              // only care about the checked count
-    $("p#order").text("Your pizza is $" + pizzaOrder.calculateCost() );
+    $("h3#order").text("Your total is $" +pizzaOrder.calculateCost() );
 });
 
 });

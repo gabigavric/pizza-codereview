@@ -10,32 +10,40 @@
 
 <body>
   <div class="container">
+    <div class="jumbotron">
+      <h1>GG's Pizza</h1>
+      <h3 class= "textorange">
+        Good for the soul.
+      </h3>
+    </div>
     <form>
-      <p>
-         Please select your pizza size
-      </p>
+      <h3>
+             How hungry are you?
+          </h3>
       <input type="radio" name="pizzaSize" id="pizzaSize" value="small" /> Small $10
       <input type="radio" name="pizzaSize" id="pizzaSize" value="medium" /> Medium $15
       <input type="radio" name="pizzaSize" id="pizzaSize" value="large" /> Large $20
 
-      <p>
-         Please select your toppings each topping is $1
-      </p>
+      <h3>
+             Top it! Each topping is a dollar extra.
+          </h3>
       <input type="checkbox" id="toppings" value="cheese" /> cheese
       <input type="checkbox" id="toppings" value="pepperoni" /> pepperoni
       <input type="checkbox" id="toppings" value="artichoke" /> artichoke
       <input type="checkbox" id="toppings" value="anchovy" /> anchovy
       <input type="checkbox" id="toppings" value="peppers" /> peppers
       <input type="checkbox" id="toppings" value="tomatos" /> tomatooos
-      <input type="submit"  />
-      <p>
-      Your Order
-      </p>
 
-      <p id="order">
+      <h3>
+          <button class="button" style="vertical-align:middle"><span>Make My Pizza! </span></button>
+          <img src="https://media.giphy.com/media/VCDSo9xqCJOjC/giphy.gif" alt="This will display an animated GIF" />
+          </h3>
 
-      </p>
+      <h3 id="order">
+
+      </h3>
     </form>
   </div>
 </body>
+
 </html>
