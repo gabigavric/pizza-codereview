@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/scripts.js"></script>
@@ -10,7 +10,32 @@
 
 <body>
   <div class="container">
-    <h1>MMM...PIZZA</h1>
+    <form>
+      <p>
+         Please select your pizza size
+      </p>
+      <input type="radio" name="pizzaSize" id="pizzaSize" value="small" /> Small $10
+      <input type="radio" name="pizzaSize" id="pizzaSize" value="medium" /> Medium $15
+      <input type="radio" name="pizzaSize" id="pizzaSize" value="large" /> Large $20
+
+      <p>
+         Please select your toppings each topping is $1
+      </p>
+      <input type="checkbox" id="toppings" value="cheese" /> cheese
+      <input type="checkbox" id="toppings" value="pepperoni" /> pepperoni
+      <input type="checkbox" id="toppings" value="artichoke" /> artichoke
+      <input type="checkbox" id="toppings" value="anchovy" /> anchovy
+      <input type="checkbox" id="toppings" value="peppers" /> peppers
+      <input type="checkbox" id="toppings" value="tomatos" /> tomatooos
+      <input type="submit"  />
+      <p>
+      Your Order
+      </p>
+
+      <p id="order">
+
+      </p>
+    </form>
   </div>
 </body>
 </html>
