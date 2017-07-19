@@ -1,12 +1,15 @@
 //business logic
 
 function Pizza(size, toppings) {
+console.info("received from function " + size);
   this.size = size;
   this.toppings = toppings;
+  console.info("This has been set by pizza function "  +this.size);
 }
 
 Pizza.prototype.calculateCost = function() {
-  if(this.size=="small"){
+  console.info("Caluction cost the size is " + this.size);
+  if(this.size == "small"){
     return 10 + this.toppings.length;
   }else if(this.size == "medium"){
     return 15 + this.toppings.length;
@@ -20,7 +23,8 @@ Pizza.prototype.calculateCost = function() {
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    var pizzaOrder = new Pizza($("input#pizzaSize").val(), // Getting pizza size from jquery
+    var pizzaOrder = new Pizza( // Getting pizza size from jquery
+                               $("input#pizzaSize:checked").val(),
                                $("input#toppings:checked")); // Getting list of toppings
                                                              // only care about the checked count
     $("h3#order").text("Your total is $" +pizzaOrder.calculateCost() );
